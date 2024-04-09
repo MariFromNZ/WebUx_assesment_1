@@ -1,6 +1,6 @@
 #welcomeText {
-    width:70%;
-    margin: 30% auto 10%;
+  width: 70%;
+  margin: 30% auto 10%;
 }
 
 // #loginBlock {
@@ -9,20 +9,13 @@
 // }
 
 #loginBlock div {
-    width:50%;
-    margin: 0 auto;
-    align-content: center;
-    label {
-        color: #303F9F;
-
-    }
+  width: 50%;
+  margin: 0 auto;
+  align-content: center;
+  label {
+    color: #303f9f;
+  }
 }
-
-
-
-
-
-  
 
 // label,input{
 //     display:flex;
@@ -33,148 +26,139 @@
 //     align-items: center
 //   }
 
-input[type=text], [type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #BEC3E1;
-    border-radius: 4px;
-    box-sizing: border-box;
-
+input[type="text"],
+[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #bec3e1;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
-
 .list {
-    gap: 20px;
-    width: 90%;
-    margin: 0 auto;
-    // background-color: aquamarine;
-    display: grid;
-    // grid-template-columns: repeat();
+  gap: 20px;
+  width: 90%;
+  margin: 0 auto;
+  // background-color: aquamarine;
+  display: grid;
+  // grid-template-columns: repeat();
 }
 
 .list div {
-    background-color:#EBF6FF;
+  background-color: #ebf6ff;
 }
 
 .fingerprint {
-    text-align: center;
+  text-align: center;
 }
 
-
 .goOut {
-    background-color: #303F9F;
-    height: 109px;
-    img {
-        position: relative;
-        top:50%;
-        right: -90%;
-    }
+  background-color: #303f9f;
+  height: 109px;
+  img {
+    position: relative;
+    top: 50%;
+    right: -90%;
+  }
 }
 
 .title {
-    background-color: #3F51B5;
-    height: 77px;
-    h2{
-        text-align: center;
-        color: white;
-        vertical-align: middle;
-        line-height: 77px;  
-        margin: 0 0 37px 0;   
-    }
+  background-color: #3f51b5;
+  height: 77px;
+  h2 {
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+    line-height: 77px;
+    margin: 0 0 37px 0;
+  }
 }
 
 //move to layout?
 .floatLeft {
-    float: left;
+  float: left;
 }
 .floatRight {
-    float: right;
+  float: right;
 }
 
-
-
 .subtitle {
-    height: 86px;
-    margin: 0 61px ;
-    h3 {
-        margin-top: 44px;
+  height: 86px;
+  margin: 0 61px;
+  h3 {
+    margin-top: 44px;
+  }
+  .roundAddBtn {
+    img {
+      margin-top: 37px;
     }
-    .roundAddBtn {
-        img {
-            margin-top: 37px;
-        }
-    }
+  }
 }
 
 .list {
-    .addresses {
-        background-color: #3F51B5;
-        height: 78px;
-        p{
-            text-align: center;
-            color: white;
-            vertical-align: middle;
-            line-height: 78px;  
-            margin: 0; 
-            text-transform: capitalize;  
-        }
+  .addresses {
+    background-color: #3f51b5;
+    height: 78px;
+    p {
+      text-align: center;
+      color: white;
+      vertical-align: middle;
+      line-height: 78px;
+      margin: 0;
+      text-transform: capitalize;
     }
+  }
 }
 .cardSubtitle {
-    height: 86px;
-    margin: 0 61px ;
-    h3 {
-        vertical-align: middle;
-        line-height: 86px; 
-        font-weight: 400;
-    }
+  height: 86px;
+  margin: 0 61px;
+  h3 {
+    vertical-align: middle;
+    line-height: 86px;
+    font-weight: 400;
+  }
 }
 
 .cardsBlock {
-    width: 90%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(2,48.98%);
-    gap: 15px;
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 48.98%);
+  gap: 15px;
 
-
-    .cards{
-    background-color: #EBF6FF;
+  .cards {
+    background-color: #ebf6ff;
     height: 127px;
     border-radius: 12px;
-    width:100%;
-
-    padding: 0 0 0 137px;
-
-    //why doesnt work in main scss??
-    box-sizing: border-box;
-
-
-    .cardText {
-        display: inline-block;
-        // margin:12% 30%;
+    display: grid;
+    grid-template-columns: repeat(2, 48.98%);
+    align-items: center;
+    .cardText{
+        justify-self:end;
     }
     .arrowRight {
-        display: inline-block;
+        justify-self:end;
     }
+    
+    //why doesnt work in main scss??
+    box-sizing: border-box;
+    padding: 31px;
+
+    // .cardText {
+    //     display: inline-block;
+    // }
+    // .arrowRight {
+    //     display: inline-block;
+    // }
     img {
-        vertical-align: middle;
-      }
-
+      vertical-align: middle;
+    }
     p {
-        font-weight: 600;
-        text-transform: capitalize;
-   
-
-
-        // text-align: center;
-        vertical-align: middle;
-        line-height: 127px; 
-        margin: 0;
-        // padding-left: 40.65%;
-        // padding-top: 12%;
+      font-weight: 600;
+      text-transform: capitalize;
     }
-    }
+
+  }
 }
