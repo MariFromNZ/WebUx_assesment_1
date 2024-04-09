@@ -1,0 +1,26 @@
+//this file is only for import
+
+//tcolor green just to check that saas is working
+body#bgMap{
+
+    background-image: url(../img/Без\ имени-1.png);
+    // background-position: center;
+//   background-repeat: no-repeat;
+
+}
+
+
+// 1 - HELPERS
+
+// 2 - TOOLS
+@import '2-tools/normalize';
+// 3 - BASICS
+@import '3-basics/buttons';
+@import '3-basics/_typography.scss';
+
+// 4 - LAYOUT
+
+// 5 - MODULES
+@import '5-modules/modules';
+
+// 6 - PAGES

@@ -1,0 +1,62 @@
+#welcomeText {
+    width:70%;
+    margin: 30% auto 10%;
+}
+
+// #loginBlock {
+//     width:70%;
+//     margin: 0 auto;
+// }
+
+#loginBlock div {
+    width:50%;
+    margin: 0 auto;
+    align-content: center;
+    label {
+        color: #303F9F;
+
+    }
+}
+
+
+
+
+
+  
+
+// label,input{
+//     display:flex;
+//     flex-direction:column;
+//   }
+
+// input{
+//     align-items: center
+//   }
+
+input[type=text], [type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #BEC3E1;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+
+
+.list {
+    gap: 20px;
+    width: 90%;
+    // background-color: aquamarine;
+    display: grid;
+    // grid-template-columns: repeat();
+}
+
+.list div {
+    background-color:#EBF6FF;
+}
+
+.fingerprint {
+    text-align: center;
+}
