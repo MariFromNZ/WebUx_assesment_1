@@ -48,6 +48,7 @@ input[type=text], [type=password] {
 .list {
     gap: 20px;
     width: 90%;
+    margin: 0 auto;
     // background-color: aquamarine;
     display: grid;
     // grid-template-columns: repeat();
@@ -59,4 +60,121 @@ input[type=text], [type=password] {
 
 .fingerprint {
     text-align: center;
+}
+
+
+.goOut {
+    background-color: #303F9F;
+    height: 109px;
+    img {
+        position: relative;
+        top:50%;
+        right: -90%;
+    }
+}
+
+.title {
+    background-color: #3F51B5;
+    height: 77px;
+    h2{
+        text-align: center;
+        color: white;
+        vertical-align: middle;
+        line-height: 77px;  
+        margin: 0 0 37px 0;   
+    }
+}
+
+//move to layout?
+.floatLeft {
+    float: left;
+}
+.floatRight {
+    float: right;
+}
+
+
+
+.subtitle {
+    height: 86px;
+    margin: 0 61px ;
+    h3 {
+        margin-top: 44px;
+    }
+    .roundAddBtn {
+        img {
+            margin-top: 37px;
+        }
+    }
+}
+
+.list {
+    .addresses {
+        background-color: #3F51B5;
+        height: 78px;
+        p{
+            text-align: center;
+            color: white;
+            vertical-align: middle;
+            line-height: 78px;  
+            margin: 0; 
+            text-transform: capitalize;  
+        }
+    }
+}
+.cardSubtitle {
+    height: 86px;
+    margin: 0 61px ;
+    h3 {
+        vertical-align: middle;
+        line-height: 86px; 
+        font-weight: 400;
+    }
+}
+
+.cardsBlock {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2,48.98%);
+    gap: 15px;
+
+
+    .cards{
+    background-color: #EBF6FF;
+    height: 127px;
+    border-radius: 12px;
+    width:100%;
+
+    padding: 0 0 0 137px;
+
+    //why doesnt work in main scss??
+    box-sizing: border-box;
+
+
+    .cardText {
+        display: inline-block;
+        // margin:12% 30%;
+    }
+    .arrowRight {
+        display: inline-block;
+    }
+    img {
+        vertical-align: middle;
+      }
+
+    p {
+        font-weight: 600;
+        text-transform: capitalize;
+   
+
+
+        // text-align: center;
+        vertical-align: middle;
+        line-height: 127px; 
+        margin: 0;
+        // padding-left: 40.65%;
+        // padding-top: 12%;
+    }
+    }
 }
