@@ -41,14 +41,12 @@ input[type="text"],
   gap: 20px;
   width: 90%;
   margin: 0 auto;
-  // background-color: aquamarine;
   display: grid;
-  // grid-template-columns: repeat();
 }
 
-.list div {
-  background-color: #ebf6ff;
-}
+// .list div {
+//   background-color: #ebf6ff;
+// }
 
 .fingerprint {
   text-align: center;
@@ -60,7 +58,7 @@ input[type="text"],
   img {
     position: relative;
     top: 50%;
-    right: -90%;
+    right: -89%;
   }
 }
 
@@ -98,16 +96,55 @@ input[type="text"],
 }
 
 .list {
-  .addresses {
+  .address {
     background-color: #3f51b5;
-    height: 78px;
-    p {
-      text-align: center;
-      color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 90% 10%);
+    align-items: center;
+    .addresses {
+      justify-self: center;
+      height: 78px;
+      p {
+        // text-align: center;
+        color: white;
+        // vertical-align: middle;
+        line-height: 78px;
+        margin: 0;
+        text-transform: capitalize;
+      }
+    }
+    a {
+      justify-self: center;
+    }
+
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    img {
       vertical-align: middle;
-      line-height: 78px;
-      margin: 0;
-      text-transform: capitalize;
+    }
+  }
+  .room {
+    background-color: #ebf6ff;
+    display: grid;
+    grid-template-columns: repeat(2, 90% 10%);
+    align-items: center;
+    .nameRoom {
+      justify-self: start;
+      margin-left: 22px;
+      height: 78px;
+      p {
+        color: #3f51b5;
+        line-height: 78px;
+        margin: 0;
+        text-transform: capitalize;
+      }
+    }
+    a {
+      justify-self: center;
+    }
+    img {
+      vertical-align: middle;
     }
   }
 }
@@ -133,18 +170,18 @@ input[type="text"],
     height: 127px;
     border-radius: 12px;
     display: grid;
-    grid-template-columns: repeat(2, 48.98%);
+    grid-template-columns: repeat(2, 80% 24%);
     align-items: center;
-    .cardText{
-        justify-self:end;
+    .cardText {
+      justify-self: center;
     }
     .arrowRight {
-        justify-self:end;
+      justify-self: center;
     }
-    
+
     //why doesnt work in main scss??
-    box-sizing: border-box;
-    padding: 31px;
+    // box-sizing: border-box;
+    // padding: 31px;
 
     // .cardText {
     //     display: inline-block;
@@ -159,6 +196,5 @@ input[type="text"],
       font-weight: 600;
       text-transform: capitalize;
     }
-
   }
 }
