@@ -12,14 +12,15 @@ a {
         height: 100%;
         margin:0;
     }
-//reduce space for fingerprint but easier for user
+ //reduce space for fingerprint but easier for user
     #fingerprint a {
         width: 40%;
         margin:0 auto;
         }
-    }
+}
 
-.list{
+
+.list, .cardsBlock{
     a {
         display: block;
         width: 100%;
@@ -28,6 +29,14 @@ a {
     }
 }
 
+.topNav {
+    a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin:0; 
+    }
+}
 
 .navbar {
     a {
