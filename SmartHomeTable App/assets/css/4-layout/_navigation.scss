@@ -1,4 +1,8 @@
 .navbar {
+  // margin:0 auto;
+  // display: flex;
+  // justify-items: space-between;
+
   height: 83px;
   overflow: hidden;
   position: fixed;
@@ -6,14 +10,13 @@
   width: 100%;
   box-shadow: 0 -3pt 7pt rgba(63, 81, 181, 0.12);
   background-color: white;
+  .navIcon {
+    align-items: center;
+  }
+  img {
+    display: block;
+    margin: 0 auto;
+  }
 }
 
-.navbar a {
-  float: left;
-  display: block;
-  color: #1d1a1a;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
+

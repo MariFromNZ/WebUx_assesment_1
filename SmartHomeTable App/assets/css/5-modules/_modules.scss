@@ -15,7 +15,11 @@
   label {
     color: #303f9f;
   }
+  img{
+    margin-top: 42px;
+  }
 }
+
 
 // label,input{
 //     display:flex;
@@ -30,25 +34,14 @@ input[type="text"],
 [type="password"] {
   width: 100%;
   padding: 12px 20px;
-  margin: 8px 0;
+  margin: 8px 0 40px;
   display: inline-block;
   border: 1px solid #bec3e1;
   border-radius: 4px;
   box-sizing: border-box;
 }
 
-.list {
-  gap: 20px;
-  width: 90%;
-  margin: 0 auto;
-  display: grid;
-}
-
-// .list div {
-//   background-color: #ebf6ff;
-// }
-
-.fingerprint {
+#fingerprint {
   text-align: center;
 }
 
@@ -84,7 +77,12 @@ input[type="text"],
 
 .subtitle {
   height: 86px;
-  margin: 0 61px;
+  // margin: 0 61px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 22px;
+      //why doesnt work in main scss??
+  box-sizing: border-box;
   h3 {
     margin-top: 44px;
   }
@@ -96,32 +94,35 @@ input[type="text"],
 }
 
 .list {
-  .address {
+  gap: 20px;
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+}
+
+.list {
+  .addressBtn {
     background-color: #3f51b5;
+    padding: 0 31px;
     display: grid;
     grid-template-columns: repeat(2, 90% 10%);
     align-items: center;
-    .addresses {
+    .addressLabel {
       justify-self: center;
       height: 78px;
       p {
-        // text-align: center;
         color: white;
-        // vertical-align: middle;
         line-height: 78px;
         margin: 0;
         text-transform: capitalize;
       }
     }
-    a {
-      justify-self: center;
-    }
-
     // display: flex;
     // align-items: center;
     // justify-content: center;
     img {
       vertical-align: middle;
+      justify-self: end;
     }
   }
   .room {
@@ -140,14 +141,12 @@ input[type="text"],
         text-transform: capitalize;
       }
     }
-    a {
-      justify-self: center;
-    }
     img {
       vertical-align: middle;
     }
   }
 }
+
 .cardSubtitle {
   height: 86px;
   margin: 0 61px;
