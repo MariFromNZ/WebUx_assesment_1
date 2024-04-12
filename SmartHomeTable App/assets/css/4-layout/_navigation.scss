@@ -1,8 +1,9 @@
+//bottom navbar
 .navbar {
-  // margin:0 auto;
-  // display: flex;
-  // justify-items: space-between;
-
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: last baseline; //inline items in nav horizontaly
   height: 83px;
   overflow: hidden;
   position: fixed;
@@ -10,16 +11,26 @@
   width: 100%;
   box-shadow: 0 -3pt 7pt rgba(63, 81, 181, 0.12);
   background-color: white;
-  .navIcon {
-    align-items: center;
-  }
   img {
     display: block;
     margin: 0 auto;
   }
 }
 
-//top nav
+//align icon and text vertically at bottom nav
+.navIcon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  //spread evenly icons in navBar
+  width: 108px;
+}
 
-
-
+//top nav go back and go out
+.topNav {
+  height: 69px;
+  width: 90%;
+  margin: 0 auto 0;
+  padding: 0 22px;
+  box-sizing: border-box;
+}
