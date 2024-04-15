@@ -1,3 +1,36 @@
+
+@media only screen and (min-width: 900px) {
+  .main {
+      .navbar{
+        .navIcon {
+          width:150px;
+        }
+      }
+    }
+}
+
+@media only screen and (max-width: 450px) {
+  p{
+    font-size: 0.875em;
+  }
+  .navbar{
+    a{
+      font-size: 0.75em;
+    }
+    .navIcon {
+      width:60px;
+    }
+    img {
+      max-height:20px;
+      max-width: 25px;
+
+    }
+
+  }
+}
+
+
+
 #welcomeText {
   width: 70%;
   margin: 30% auto 10%;
@@ -14,6 +47,7 @@
     margin-top: 42px;
   }
 }
+
 
 // label,input{
 //     display:flex;
@@ -44,7 +78,6 @@ input[type="text"],
   padding-top: 49px;
 }
 
-
 .title {
   background-color: #3f51b5;
   height: 77px;
@@ -57,13 +90,17 @@ input[type="text"],
   }
 }
 
-//move to layout?
+
+
+//move to layout?check if i still use it /////////////////////////////////////////
 .floatLeft {
   float: left;
 }
 .floatRight {
   float: right;
 }
+
+
 
 .subtitle {
   height: 86px;
@@ -116,7 +153,7 @@ input[type="text"],
     background-color: #ebf6ff;
     padding: 0 31px;
     display: grid;
-    grid-template-columns: repeat(2, 90% 10%);
+    grid-template-columns:  90% 10%;
     align-items: center;
     .nameRoom {
       justify-self: start;
@@ -170,17 +207,6 @@ input[type="text"],
     .arrowRight {
       justify-self: end;
     }
-
-    //why doesnt work in main scss??
-    // box-sizing: border-box;
-    // padding: 31px;
-
-    // .cardText {
-    //     display: inline-block;
-    // }
-    // .arrowRight {
-    //     display: inline-block;
-    // }
     img {
       vertical-align: middle;
     }
@@ -189,4 +215,232 @@ input[type="text"],
       text-transform: capitalize;
     }
   }
+}
+
+.cardsOptional {
+  width: 90%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns:  1fr 1fr 1fr;
+  // grid-template-rows:  1fr 1fr ;
+  gap: 17px;
+
+  //trying to align div with img & text
+  .cardsInfo {
+    margin: 0 auto;
+    display: inline-flex;
+    justify-content: center;
+
+    .iconHumidity,
+    .iconTemperature {
+      height: 66px;
+      width: 100px;
+      border-radius: 12px;
+      background-color: #fff;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+      img {
+        padding-right: 10px;
+      }
+    }
+  }
+
+  .cards {
+    background-color: #ebf6ff;
+    padding: 10px;
+    // height: 127px;
+    border-radius: 12px;
+    // margin-top: 17px;
+    text-align: center;
+  }
+
+  .card1 {
+    grid-row: 1/3;
+    grid-column: 1/2;
+    border: solid 1px transparent;//to make same height with card 4 as box-sizing: border-box didnt help
+  }
+  .card2 {
+    grid-row: 1/4;
+    grid-column: 2/3;
+  }
+  .card3 {
+    grid-row: 1/4;
+    grid-column: 3/4;
+  }
+  .card4 {
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
+}
+#borderLight {
+  background: none;
+  border: solid 1px #ebf6ff;
+}
+
+//make new element table lamp
+.chosen {
+  background-color: #3f51b5;
+  padding: 0 31px;
+  display: grid;
+  grid-template-columns: repeat(4, 30% 10% 45% 15%);
+  align-items: center;
+  overflow: hidden;
+  .nameRoom {
+    justify-self: start;
+    height: 78px;
+    p {
+      color: #ffffff;
+      line-height: 78px;
+      margin: 0;
+      text-transform: capitalize;
+    }
+  }
+  img {
+    vertical-align: middle;
+    justify-self: end;
+  }
+  .circle {
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    background-color: #a3e8e8;
+    border: solid 0.5px #3f51b5;
+  }
+}
+
+
+
+input[type="range"] {
+  width: 90%;
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+}
+
+/***** Track Styles *****/
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+input[type="range"]::-webkit-slider-runnable-track {
+  background: #bfc3e1;
+  height: 3px;
+}
+
+/******** Firefox ********/
+input[type="range"]::-moz-range-track {
+  background: #bfc3e1;
+  height: 3px;
+  border-radius: 50%;
+}
+
+/***** Thumb Styles *****/
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  margin-top: -7px; /* Centers thumb on the track */
+  background-color: #bfc3e1;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+///////range 1 try to make it interactive and change color
+// #range1 {
+//   -webkit-appearance: none;
+//   appearance: none; 
+//   width: 100%;
+//   cursor: pointer;
+//   outline: none;
+//   overflow: hidden;
+//   border-radius: 16px;
+// }
+
+// #range1::-webkit-slider-runnable-track {
+//   height: 15px;
+//   background: #ccc;
+//   border-radius: 16px;
+// }
+
+// #range1::-moz-range-track {
+//   height: 15px;
+//   background: #ccc;
+//   border-radius: 16px;
+// }
+
+// #range1::-webkit-slider-thumb {
+//   -webkit-appearance: none;
+//   appearance: none; 
+//   height: 15px;
+//   width: 15px;
+//   background-color: #fff;
+//   border-radius: 50%;
+//   border: 2px solid #f50;
+//   box-shadow: -407px 0 0 400px #f50;
+// }
+
+// #range1::-moz-range-thumb {
+//   height: 15px;
+//   width: 15px;
+//   background-color: #fff;
+//   border-radius: 50%;
+//   border: 1px solid #f50;
+//   box-shadow: -407px 0 0 400px #f50;
+// }
+
+
+
+.toggle {
+  --width: 48px;
+  --height: calc(var(--width) / 3);
+  position: relative;
+  display: inline-block;
+  width: var(--width);
+  height: var(--height);
+  border-radius: var(--height);
+  cursor: pointer;
+}
+
+.toggle input {
+  display: none;
+}
+
+.toggle .slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--height);
+  border: solid 1px #3F51B5;
+  background-color: #ffffff;
+  transition: all 0.4s ease-in-out;
+}
+
+.toggle .slider::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(var(--height));
+  height: calc(var(--height));
+  border-radius: calc(var(--height) / 2);
+  background-color: #3F51B5;
+  // box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease-in-out;
+}
+
+.toggle input:checked+.slider {
+  background-color: #ffffff;
+}
+
+.toggle input:checked+.slider::before {
+  transform: translateX(calc(var(--width) - var(--height)));
 }
