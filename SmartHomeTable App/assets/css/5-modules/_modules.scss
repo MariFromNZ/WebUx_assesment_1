@@ -1,85 +1,11 @@
 
-@media only screen and (min-width: 900px) {
-  .main {
-      .navbar{
-        .navIcon {
-          width:150px;
-        }
-      }
-    }
-}
-
-@media only screen and (max-width: 450px) {
-  p{
-    font-size: 0.875em;
-  }
-  .navbar{
-    a{
-      font-size: 0.75em;
-    }
-    .navIcon {
-      width:60px;
-    }
-    img {
-      max-height:20px;
-      max-width: 25px;
-
-    }
-
-  }
-}
-
-
-
-#welcomeText {
-  width: 70%;
-  margin: 30% auto 10%;
-}
-
-#loginBlock div {
-  width: 50%;
-  margin: 0 auto;
-  align-content: center;
-  label {
-    color: #303f9f;
-  }
-  img {
-    margin-top: 42px;
-  }
-}
-
-
-// label,input{
-//     display:flex;
-//     flex-direction:column;
-//   }
-
-// input{
-//     align-items: center
-//   }
-
-input[type="text"],
-[type="password"] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0 40px;
-  display: inline-block;
-  border: 1px solid #bec3e1;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-#fingerprint {
-  text-align: center;
-}
-
 .topBgBlue {
-  background-color: #303f9f;
+  background-color: $bgDarkBlue;
   padding-top: 49px;
 }
 
 .title {
-  background-color: #3f51b5;
+  background-color: $bgMainBlue;
   height: 77px;
   h2 {
     text-align: center;
@@ -90,22 +16,9 @@ input[type="text"],
   }
 }
 
-
-
-//move to layout?check if i still use it /////////////////////////////////////////
-.floatLeft {
-  float: left;
-}
-.floatRight {
-  float: right;
-}
-
-
-
 .subtitle {
   height: 86px;
-  width: 90%;
-  margin: 0 auto;
+  @include width90center;
   padding: 0 22px;
   //why doesnt work in main scss??
   box-sizing: border-box;
@@ -119,16 +32,18 @@ input[type="text"],
   }
 }
 
+.hidden{
+  visibility:hidden;
+}
 .list {
   gap: 20px;
-  width: 90%;
-  margin: 0 auto;
+  @include width90center;
   display: grid;
 }
 
 .list {
   .addressBtn {
-    background-color: #3f51b5;
+    background-color: $bgMainBlue;
     padding: 0 31px;
     display: grid;
     grid-template-columns: repeat(2, 90% 10%);
@@ -137,6 +52,7 @@ input[type="text"],
     .addressLabel {
       justify-self: center;
       height: 78px;
+
       p {
         color: white;
         line-height: 78px;
@@ -144,27 +60,32 @@ input[type="text"],
         text-transform: capitalize;
       }
     }
+
     img {
       vertical-align: middle;
       justify-self: end;
     }
   }
+
   .room {
-    background-color: #ebf6ff;
+    background-color: $bgLightBlue;
     padding: 0 31px;
     display: grid;
-    grid-template-columns:  90% 10%;
+    grid-template-columns: 90% 10%;
     align-items: center;
+
     .nameRoom {
       justify-self: start;
       height: 78px;
+
       p {
-        color: #3f51b5;
+        color: $textBlue;
         line-height: 78px;
         margin: 0;
         text-transform: capitalize;
       }
     }
+
     img {
       vertical-align: middle;
       justify-self: end;
@@ -173,11 +94,11 @@ input[type="text"],
 }
 
 .cardSubtitle {
-  width: 90%;
-  margin: 0 auto;
+  @include width90center;
   height: 62px;
   padding: 0 22px;
   box-sizing: border-box;
+
   h3 {
     vertical-align: middle;
     line-height: 62px;
@@ -187,29 +108,32 @@ input[type="text"],
 }
 
 .cardsBlock {
-  width: 90%;
-  margin: 0 auto;
+  @include width90center;
   display: grid;
   grid-template-columns: repeat(2, 48.98%);
   gap: 15px;
 
   .cards {
-    background-color: #ebf6ff;
+    background-color: $bgLightBlue;
     padding: 0 31px;
     height: 127px;
     border-radius: 12px;
     display: grid;
     grid-template-columns: repeat(2, 80% 20%);
     align-items: center;
+
     .cardText {
       justify-self: center;
     }
+
     .arrowRight {
       justify-self: end;
     }
+
     img {
       vertical-align: middle;
     }
+
     p {
       font-weight: 600;
       text-transform: capitalize;
@@ -221,16 +145,12 @@ input[type="text"],
   width: 90%;
   margin: 20px auto;
   display: grid;
-  grid-template-columns:  1fr 1fr 1fr;
-  // grid-template-rows:  1fr 1fr ;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 17px;
-
-  //trying to align div with img & text
   .cardsInfo {
     margin: 0 auto;
     display: inline-flex;
     justify-content: center;
-
     .iconHumidity,
     .iconTemperature {
       height: 66px;
@@ -248,65 +168,74 @@ input[type="text"],
   }
 
   .cards {
-    background-color: #ebf6ff;
+    background-color: $bgLightBlue;
     padding: 10px;
-    // height: 127px;
     border-radius: 12px;
-    // margin-top: 17px;
     text-align: center;
   }
 
   .card1 {
     grid-row: 1/3;
     grid-column: 1/2;
-    border: solid 1px transparent;//to make same height with card 4 as box-sizing: border-box didnt help
+    border: solid 1px transparent; //to make same height with card 4 as box-sizing: border-box didnt help
   }
+
   .card2 {
     grid-row: 1/4;
     grid-column: 2/3;
   }
+
   .card3 {
     grid-row: 1/4;
     grid-column: 3/4;
   }
+
   .card4 {
     grid-row: 3/4;
     grid-column: 1/2;
   }
 }
+
 #borderLight {
   background: none;
-  border: solid 1px #ebf6ff;
+  border: solid 1px $borderLight;
 }
+
+
+
 
 //make new element table lamp
 .chosen {
-  background-color: #3f51b5;
+  background-color: $bgMainBlue;
   padding: 0 31px;
   display: grid;
   grid-template-columns: repeat(4, 30% 10% 45% 15%);
   align-items: center;
   overflow: hidden;
+
   .nameRoom {
     justify-self: start;
     height: 78px;
+
     p {
-      color: #ffffff;
+      color: #fff;
       line-height: 78px;
       margin: 0;
       text-transform: capitalize;
     }
   }
+
   img {
     vertical-align: middle;
     justify-self: end;
   }
+
   .circle {
     height: 22px;
     width: 22px;
     border-radius: 50%;
-    background-color: #a3e8e8;
-    border: solid 0.5px #3f51b5;
+    background-color: #000000;
+    border: solid 0.5px $borderDarkBlue;
   }
 }
 
@@ -336,9 +265,11 @@ input[type="range"]::-moz-range-track {
 /***** Thumb Styles *****/
 /***** Chrome, Safari, Opera, and Edge Chromium *****/
 input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none; /* Override default look */
+  -webkit-appearance: none;
+  /* Override default look */
   appearance: none;
-  margin-top: -7px; /* Centers thumb on the track */
+  margin-top: -7px;
+  /* Centers thumb on the track */
   background-color: #bfc3e1;
   height: 16px;
   width: 16px;

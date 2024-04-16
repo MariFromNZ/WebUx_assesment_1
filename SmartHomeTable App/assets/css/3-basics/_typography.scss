@@ -11,7 +11,7 @@ body {
 h1 {
     font-family: "Sono";
     font-size: 2.6em;
-    color: #303F9F;
+    color: $textBlue;
     text-transform: capitalize;
     letter-spacing: -0.03em;
 }
@@ -26,7 +26,7 @@ h3 {
     font-family:"Open sans";
     font-size: 1em;
     text-transform:uppercase;
-    color: #303F9F;
+    color: $textBlue;
     font-weight: 700;
 }
 p,form,input {
@@ -39,7 +39,7 @@ p,form,input {
 }
 p {
     font-size: 1em;
-    color: #303F9F;
+    color: $textBlue;
 }
 
 p.bold {
