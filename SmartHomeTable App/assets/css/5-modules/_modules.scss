@@ -6,6 +6,7 @@
 .title {
   background-color: $bgMainBlue;
   height: 77px;
+
   h2 {
     text-align: center;
     color: white;
@@ -19,9 +20,11 @@
   height: 86px;
   padding: 0 22px;
   box-sizing: border-box;
+
   h3 {
     margin-top: 44px;
   }
+
   .roundAddBtn {
     img {
       margin-top: 37px;
@@ -29,36 +32,38 @@
   }
 }
 
-.list {
-  .addressBtn {
+.listContainer {
+  .listElementAddress {
     background-color: $bgMainBlue;
     padding: 0 31px;
+
     .addressLabel {
       justify-self: center;
       height: 78px;
+
       p {
         color: white;
-        line-height: 78px;
-        margin: 0;
-        text-transform: capitalize;
+        @include listElementLabelText;
       }
     }
+
     img {
       vertical-align: middle;
       justify-self: end;
     }
   }
-  .room {
+
+  .listElement {
     background-color: $bgLightBlue;
     padding: 0 31px;
-    .nameRoom {
+
+    .listElementLabel {
       justify-self: start;
       height: 78px;
+
       p {
         color: $textBlue;
-        line-height: 78px;
-        margin: 0;
-        text-transform: capitalize;
+        @include listElementLabelText;
       }
     }
 
@@ -88,15 +93,19 @@
     padding: 0 31px;
     height: 127px;
     border-radius: 12px;
+
     .cardText {
       justify-self: center;
     }
+
     .arrowRight {
       justify-self: end;
     }
+
     img {
       vertical-align: middle;
     }
+
     p {
       font-weight: 600;
       text-transform: capitalize;
@@ -107,10 +116,12 @@
 .cardsOptional {
   width: 90%;
   margin: 20px auto;
+
   .cardsInfo {
     margin: 0 auto;
     display: inline-flex;
     justify-content: center;
+
     .iconHumidity,
     .iconTemperature {
       height: 66px;
@@ -121,11 +132,13 @@
       display: flex;
       justify-content: center;
       margin-bottom: 20px;
+
       img {
         padding-right: 10px;
       }
     }
   }
+
   .cards {
     background-color: $bgLightBlue;
     padding: 10px;
