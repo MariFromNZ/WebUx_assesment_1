@@ -1,0 +1,22 @@
+html {
+    box-sizing: border-box;
+}
+
+.none {
+    display: none;
+}
+
+body#bgMap {
+    background-image: url(../img/Без\ имени-1.png);
+}
+
+.list,
+.subtitle,
+.cardSubtitle,
+.cardsBlock {
+  @include width90center;
+}
+
+.hidden{
+    visibility:hidden;
+  }
