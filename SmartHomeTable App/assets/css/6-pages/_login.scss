@@ -1,9 +1,9 @@
 #welcomeText {
     width: 70%;
     margin: 30% auto 10%;
-  }
+}
   
-  #loginBlock div {
+#loginBlock div {
     margin: 0 auto;
     align-content: center;
     label {
@@ -12,9 +12,9 @@
     img {
       margin-top: 42px;
     }
-  }
+}
   
-  input[type="text"],
+input[type="text"],
   [type="password"] {
     width: 100%;
     padding: 12px 20px;
@@ -23,8 +23,8 @@
     border: 1px solid $InputBorder;
     border-radius: 4px;
     box-sizing: border-box;
-  }
+}
   
-  #fingerprint {
+#fingerprint {
     text-align: center;
-  }
+}
