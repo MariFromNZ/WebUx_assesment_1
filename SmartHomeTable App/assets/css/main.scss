@@ -21,6 +21,7 @@ html {
 // 1 - HELPERS
 @import '1-helpers/mixins';
 @import'1-helpers/variables';
+@import'1-helpers/media';
 // 2 - TOOLS
 @import '2-tools/normalize';
 // 3 - BASICS
@@ -30,7 +31,6 @@ html {
 
 // 4 - LAYOUT
 @import'4-layout/float';
-@import'4-layout/media';
 @import'4-layout/navigation';
 
 // 5 - MODULES

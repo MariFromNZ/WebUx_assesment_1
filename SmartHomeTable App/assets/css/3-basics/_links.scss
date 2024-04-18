@@ -1,4 +1,3 @@
-
 a {
     text-decoration: none;
 }
@@ -7,14 +6,16 @@ a {
     a {
         @include fullSize;
     }
- //reduce space for fingerprint, easier for user
+
+    //reduce space for fingerprint, easier for user
     #fingerprint a {
         width: 40%;
-        margin:0 auto;
+        margin: 0 auto;
     }
 }
 
-.list, .cardsBlock {
+.list,
+.cardsBlock {
     a {
         @include fullSize;
     }
@@ -33,7 +34,7 @@ a {
         text-decoration: none;
         font-family: 'Open sans';
         color: $textBlue;
-        font-size: 0.875em;
+        // font-size: 0.875em;
         text-transform: capitalize;
     }
 }
@@ -41,9 +42,5 @@ a {
 .list {
     a {
         justify-self: center;
-      }
+    }
 }
-
-
-
-

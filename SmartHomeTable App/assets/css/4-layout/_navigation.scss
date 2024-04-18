@@ -22,6 +22,10 @@
   }
 }
 
+body {
+  margin-bottom:83px;//fix navbar overlapping 
+}
+
 //align icon and text vertically at bottom nav
 .navIcon {
   display: flex;
