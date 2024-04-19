@@ -1,50 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon.ico">
-</head>
-<body id="bgMap">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/img/favicon.ico"
+    />
+  </head>
+  <body id="bgMap">
     <div id="welcomeText">
-        <h1>welcome to applienceplus app</h1>
-        <p class="bold">let's make your Kāinga comfy and pleasant to you and your family</p>
+      <h1>welcome to applienceplus app</h1>
+      <p class="bold">
+        let's make your Kāinga comfy and pleasant to you and your family
+      </p>
     </div>
 
     <div id="loginBlock">
-        <form action="" method="get" class="form">
-            <div class="form">
-                <label for="name">Username </label>
-                <input type="text" id='name' name="name" placeholder="name"   autocomplete="off" required />
-            </div>
-            <div class="form">
-                <label for="password">Password </label>
-                <input type="password"  id='password' name="password" placeholder="password" required />
-            </div>
-            <div class="form" id="login">
-                <a href="home.html">
-                    <input type="submit" value="Log in" />
-                </a>
-            </div>
-        </form>
-        <div>
-            <p>Or</p>
+      <form action="home.html" method="get" class="form">
+        <div class="form">
+          <label for="name">Username </label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="name"
+            autocomplete="off"
+            required
+          />
         </div>
-        <div id="registerBtn">
-            <a href="home.html">
-                <input type="submit" value="Register" />
-            </a>
+        <div class="form">
+          <label for="password">Password </label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="password"
+            required
+          />
         </div>
+        <div class="form" id="loginBtn">
+          <input type="submit" value="Log in" />
+        </div>
+      </form>
+      <div>
+        <p>Or</p>
+      </div>
+      <div id="registerBtn">
+          <input type="submit" value="Register" />
+      </div>
 
-        <div id="fingerprint">
-            <a href="home.html">
-                <img src="/assets/img/Group 108.png" style="width:53px;height:70px;" alt="fingerprint icon">
-            </a>
-        </div>
+      <div id="fingerprint">
+        <a href="home.html">
+          <img
+            src="/assets/img/Group 108.png"
+            style="width: 53px; height: 70px"
+            alt="fingerprint icon"
+          />
+        </a>
+      </div>
     </div>
-    
-    <script src="assets/js/main.js"></script>
-</body>
+
+    <script src="assets/js/index.js"></script>
+  </body>
 </html>
